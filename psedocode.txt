@@ -1,0 +1,24 @@
+directions + needed functionality:
+
+-utilize jquery
+-link to giphy API w/ key
+ * Be sure to read about these GIPHY parameters (hint, hint):
+     * `q`
+     * `limit`
+     * `rating`
+~array of "topics"~
+-create buttons based on topics
+(loop through to add buttons for each)
+-onButtonClick = grab 10 static gifs from API and place on page
+-onClick staticGif = animate
+-onClick animatedGif = static
+-display gif rating beneath each gif
+(data from API)
+~user input form~
+-user input value push to "topics"
+-function to remake buttons from topics
+-previous gif functionality
+
+~deploy to githubpages
+~update portfolio
+~update README
