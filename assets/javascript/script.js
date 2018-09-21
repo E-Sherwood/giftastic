@@ -1,4 +1,4 @@
-//var inputText = 
+var metalArray = ["thrash", "death", "black", "djent", "nu", "speed"]
 var apiURL = 'https://api.giphy.com/v1/gifs/search';
  $("#test").on("click", function(){
     $.ajax({
@@ -11,11 +11,15 @@ var apiURL = 'https://api.giphy.com/v1/gifs/search';
         
     })
     .then(function(response){
-        var imageUrl = response.data.image_original_url;
-        var testImage = $("<img>");
-        testImage.attr("src", imageUrl);
-        testImage.attr("alt", "test image");
-        $("#images").prepend(testImage)
+        console.log(response);
+        for (var x = 0; x < response.data.length; x++){
+            var imageUrl = response.data[x].images.original.url;
+            var testImage = $("<img>");
+            testImage.attr("src", imageUrl);
+            testImage.attr("data-state", "still");
+            testImage.attr("alt", "test image");
+            $("#images").append(testImage)    
+        }
     })
 
     
