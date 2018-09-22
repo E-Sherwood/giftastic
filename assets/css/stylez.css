@@ -8,16 +8,47 @@ img {
     float: left;
 }
 button {
-    height: 30px;
-    width: 60px;
+    height: 50px;
+    width: 100px;
+    font-family: 'Metal Mania', cursive;
+    font-size: 30px;
+    padding: 6px;
+    text-align:center;
+    margin-right:6px;
+    text-shadow: 1px 1px 1px #EC0303;
 }
 p {
-    color: red;
+    color: #EC0303;
     float:left;
     margin-top: 350px;
     margin-left: -250px;
+    font-family: 'Metal Mania', cursive;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #666;
 
 }
 h1 {
     color: #666;
+    font-family: 'Metal Mania', cursive;
+    font-size: 66px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #EC0303;
+}
+form {
+    font-family: 'Metal Mania', cursive;
+    color: #666;
+    font-size: 40px;
+    text-align:center;
+    text-shadow: 1px 1px 1px #EC0303;
+}
+input {
+    font-family: 'Metal Mania', cursive;
+    color: #666;
+    font-size: 30px;
+}
+#newButtons {
+    text-align:center;
+}
+#buttons {
+    text-align:center;
 }
